@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Candle clock</title>
+    <link rel="stylesheet" href="Styles/mystyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Aldrich|Orbitron|ZCOOL+QingKe+HuangYou" rel="stylesheet">
+</head>
+
+<body class="content-wrap background">
+    <header>
+        <h1>Elon Musk's space clock</h1>
+    </header>
+
+    <section>
+        <div>
+            <h2>CURRENT TIME</h2>
+            <p id="time" class="timeDesign"></p>
+             <div class="dropdown">
+                <button class="dropbtn">MORE INFO</button>
+                <div class="dropdown-content">
+                    <p>How the clock works:</p>
+                    <p>There are three main parts to this clock: the Earth, the Moon and Mars.</p>
+                    <p>The earth and the moon rotate around the sun together. One rotation has the duration of one full hour. Also, the moon rotates around the earth in one minute (60 seconds).</p>
+                    <p>Mars rotates around the sun separately from the earth and moon. Mars makes one full rotation every twelve hours.</p>
+                    <p>This means that Mars shows the current hours (in a 12 hour clock), the earth shows the current amount of minutes in that hour, and the moon shows the current amount of seconds in that minute.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="galaxyBox">
+            <div id="mars-box">
+                <div><img id="mars" src="Images/mars.png"></div>
+            </div>
+            <div id="preset">
+                <div id="solarSystem-box">
+                    <div><img id="sun" src="Images/sun.png"></div>
+                    <div id="earth-moon-box">
+                        <!--<div id="moonRotate">-->
+                        <div id="earth">
+                            <img class="earthsize" src="Images/earth.png">
+                        </div>
+                            <div id="moonBox">
+                                <div id="moon">
+                                    <img class="moonsize" src="Images/moon.png">
+                                </div>
+                            </div>
+                        <!--</div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="Scripts/TweenMax.min.js"></script>
+    <script src="Scripts/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+/* Global styles 
+------------------------------------*/
+/* border box fix */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    
+}
+
+h1,
+h2 {
+    color: white;
+    font-family: 'Aldrich', cursive;
+}
+
+p {
+    color: white;
+    margin-top: 10px;
+}
+
+.center-text {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+.center-align {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-wrap {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0px 50px;
+    overflow: hidden;
+}
+
+.timeDesign {
+    font-family: 'Aldrich', cursive;
+    color: white;
+}
+
+.background {
+    background: url(../Images/stars.gif);
+}
+
+#galaxyBox {
+    width: 700px;
+    height: 700px;
+    margin-top: -190px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(../Images/clockpointers.png);
+    background-size: cover;
+}
+
+#mars-box {
+    position: relative;
+    width: 700px;
+    height: 700px;
+}
+
+#preset {
+    position: relative;
+    top: -700px;
+    margin-top: 45px;
+}
+
+#solarSystem-box {
+    position: relative;
+    width: 700px;
+    height: 700px;
+    margin-top: -46px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*top: -700px;*/
+}
+
+#moonRotate {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+#sun {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    left: 300px;
+    top: 300px;
+}
+
+#earth-moon-box {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 255px;
+    top: -100px;
+}
+
+#earth {
+    position: relative;
+    width: 50px;
+    left: 75px;
+    top: 75px;
+}
+
+#mars {
+    position: relative;
+    width: 40px;
+    top: 10px;
+    left: 330px;
+}
+
+#moonBox {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    left: 55px;
+    top: 11px;
+}
+
+#moon {
+    width 15px;
+}
+
+.earthsize {
+    width: 40px;
+    height: 40px;
+}
+
+.moonsize {
+    width: 15px;
+    height: 15px;
+}
+
+/*----------------------------*/
+
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    font-weight: bold;
+    font-family: 'Aldrich', cursive;
+    text-transform: uppercase;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1D1D1D;
+    width: 300%;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-family: 'Aldrich', cursive;
+    padding: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #1D1D1D;
+    box-shadow: 0px -3px 16px 0px rgba(0, 0, 0, 0.2);
+}
