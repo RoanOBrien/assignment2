@@ -9,7 +9,7 @@ function time() {
 
     document.getElementById("time").innerHTML = hours + ":" + minutes + ":" + seconds;
     setTimeout(time, 1000);
-    /*changeBackground(hours);*/
+    
 }
 
 time();
@@ -27,15 +27,6 @@ function makeAnalog(i) {
     }
     return i;
 }
-
-/*function changeBackground(x) {
-    if (x >= 12 && x < 24) {
-        document.querySelector(".background").style.background = "url(../programmingAssignment2/Images/eyenebula.jpg)";
-            document.querySelector(".background").style.backgroundSize = "cover";
-            document.querySelector(".background").style.marginTop = "460px";
-            document.querySelector(".background").style.marginLeft = "100px";
-    } 
-}*/
 
 (function () {
     var tl1 = new TimelineMax({
@@ -56,13 +47,17 @@ function makeAnalog(i) {
     var Mars = new TimelineMax({
         repeat: -1
     });
-    /*var correctMoon = new TimelineMax({repeat:0});*/
+    var preMoon = new TimelineMax({
+        repeat: 0
+    });
 
     var today = new Date();
     var correction = today.getMinutes() * 6;
     var correctSeconds = today.getSeconds() * 0.1;
     var correctHours = makeAnalog(today.getHours()) * 30;
     var correctMinutes = today.getMinutes() * 0.5;
+    var moonCorrection = 40;
+    
 
     preSolar.set('#preset', {
         rotation: correction + correctSeconds
@@ -86,11 +81,6 @@ function makeAnalog(i) {
         ease: Power0.easeNone,
         rotation: -360
     });
-    
-    /*correctMoon.to('#moonBox', 0,0001, {
-        ease: Power0.easeNone,
-        rotation: -correction 
-    });*/
 
     tl3.to('#moonBox', 60, {
         ease: Power0.easeNone,

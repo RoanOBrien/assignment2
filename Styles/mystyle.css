@@ -11,9 +11,7 @@ html {
     box-sizing: inherit;
 }
 
-body {
-    
-}
+body {}
 
 h1,
 h2 {
@@ -52,6 +50,10 @@ p {
 
 .background {
     background: url(../Images/stars.gif);
+    /*
+    background-size: cover;
+    background-position: center;
+*/
 }
 
 #galaxyBox {
@@ -124,12 +126,22 @@ p {
     left: 330px;
 }
 
-#moonBox {
+#moonBoxOffset {
     position: relative;
     width: 80px;
     height: 80px;
     left: 55px;
     top: 11px;
+}
+
+#moonBox {
+    position: relative;
+    width: 80px;
+    height: 80px;
+/*
+    left: 55px;
+    top: 11px;
+*/
 }
 
 #moon {
